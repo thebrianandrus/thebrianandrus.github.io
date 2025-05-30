@@ -26,6 +26,19 @@
     .links a:hover {
       text-decoration: underline;
     }
+    .video-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .video-row iframe {
+      width: 100%;
+      max-width: 320px;
+      height: 180px;
+      border: none;
+    }
   </style>
 </head>
 <body>
@@ -35,6 +48,24 @@
     <a href="https://www.instagram.com/thebrianandrus/" target="_blank">Instagram</a>
     <a href="https://www.youtube.com/@TheBrianAndrus" target="_blank">YouTube</a>
     <a href="https://www.linkedin.com/in/thebrianandrus/" target="_blank">LinkedIn</a>
+  </div>
+
+  <div class="video-row">
+    <iframe src="https://www.youtube.com/embed/gl6JWl4MfIY" 
+            title="YouTube video 1" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+    </iframe>
+    <iframe src="https://www.youtube.com/embed/odyKSlU-GZo" 
+            title="YouTube video 2" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+    </iframe>
+    <iframe src="https://www.youtube.com/embed/7xi-0-dWp6k" 
+            title="YouTube video 3" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+    </iframe>
   </div>
 </body>
 </html>
