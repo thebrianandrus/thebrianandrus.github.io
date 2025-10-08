@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Brian Andrus | Videos</title>
+  <title>My Portfolio</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
@@ -16,6 +16,16 @@
     h1 {
       color: #2c3e50;
     }
+    .links a {
+      display: inline-block;
+      margin: 0.5rem;
+      color: #0077b6;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .links a:hover {
+      text-decoration: underline;
+    }
     .video-row {
       display: flex;
       flex-wrap: wrap;
@@ -29,26 +39,33 @@
       height: 180px;
       border: none;
     }
-    .back-link {
-      margin-top: 2rem;
-    }
-    .back-link a {
-      color: #0077b6;
-      text-decoration: none;
-      font-weight: bold;
-    }
   </style>
 </head>
 <body>
-  <h1>Featured Videos</h1>
-  <div class="video-row">
-    <iframe src="https://www.youtube.com/embed/gl6JWl4MfIY" title="YouTube video 1" allowfullscreen></iframe>
-    <iframe src="https://www.youtube.com/embed/odyKSlU-GZo" title="YouTube video 2" allowfullscreen></iframe>
-    <iframe src="https://www.youtube.com/embed/7xi-0-dWp6k" title="YouTube video 3" allowfullscreen></iframe>
+  <h1>Hello, I'm Brian Andrus</h1>
+  <p>Welcome to my portfolio site.</p>
+  <div class="links">
+    <a href="https://www.instagram.com/thebrianandrus/" target="_blank">Instagram</a>
+    <a href="https://www.youtube.com/@TheBrianAndrus" target="_blank">YouTube</a>
+    <a href="https://www.linkedin.com/in/thebrianandrus/" target="_blank">LinkedIn</a>
   </div>
 
-  <div class="back-link">
-    <p><a href="index.html">&larr; Back to Home</a></p>
+  <div class="video-row">
+    <iframe src="https://www.youtube.com/embed/gl6JWl4MfIY" 
+            title="YouTube video 1" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+    </iframe>
+    <iframe src="https://www.youtube.com/embed/odyKSlU-GZo" 
+            title="YouTube video 2" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+    </iframe>
+    <iframe src="https://www.youtube.com/embed/7xi-0-dWp6k" 
+            title="YouTube video 3" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+    </iframe>
   </div>
 </body>
 </html>
