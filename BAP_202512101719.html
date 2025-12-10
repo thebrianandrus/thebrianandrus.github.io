@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    /* Base layout */
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      background-color: #f6f3ee; 
+      color: #111;
+    }
+
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 2rem;
+      text-align: center;
+      flex: 1;
+    }
+
+    h1 {
+      margin: 0 0 0.75rem;
+      font-size: 2rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    p {
+      margin: 0.4rem 0;
+      font-size: 0.95rem;
+    }
+
+    /* Contact info */
+    .contact {
+      margin-top: 0.75rem;
+      font-size: 0.9rem;
+      letter-spacing: 0.04em;
+    }
+
+    .contact a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s ease, opacity 0.2s ease;
+    }
+
+    .contact a:hover {
+      border-color: #111;
+      opacity: 0.85;
+    }
+
+    /* Social links */
+    .links {
+      margin-top: 2.5rem;
+      margin-bottom: 3rem;
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .links a {
+      display: inline-block;
+      margin: 0 0.75rem;
+      color: #111;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s ease, opacity 0.2s ease;
+    }
+
+    .links a:hover {
+      border-color: #111;
+      opacity: 0.75;
+    }
+
+    /* Circle layout */
+    .circle-section {
+      margin-top: 3.5rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .circle {
+      width: 360px;
+      height: 360px;
+      border-radius: 50%;
+      border: 1px solid #222;
+      position: relative;
+      margin: 0 auto;
+    }
+
+    .circle-link {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      font-size: 0.8rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #111;
+      font-weight: 500;
+      white-space: nowrap;
+      transition: opacity 0.2s ease, letter-spacing 0.2s ease;
+    }
+
+    .circle-link:hover {
+      opacity: 0.7;
+      letter-spacing: 0.24em;
+    }
+
+    /* Acting stays at top */
+    .circle-link.acting {
+      top: 12%;
+      left: 50%;
+    }
+
+    /* Marketing moved UPWARD to mid-left side */
+    .circle-link.marketing {
+      top: 50%;   /* vertically centered */
+      left: 14%;  /* left side of circle */
+    }
+
+    /* Inebriant Studios stays lower right */
+    .circle-link.studios {
+      bottom: 16%;
+      left: 74%;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid #e0ddd7;
+      padding: 1.5rem 1.5rem 2rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #777;
+    }
+
+    footer .contact {
+      margin-top: 0.35rem;
+      font-size: 0.8rem;
+      letter-spacing: 0.06em;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <h1>Hello, I'm Brian Andrus</h1>
+    <p>Welcome to my portfolio site.</p>
+
+    <div class="contact">
+      <span>248.977.7424</span> &nbsp;·&nbsp;
+      <a href="mailto:thebrianandrus@gmail.com">thebrianandrus@gmail.com</a>
+    </div>
+
+    <div class="links">
+      <a href="https://www.instagram.com/thebrianandrus/" target="_blank">Instagram</a>
+      <a href="https://www.youtube.com/@TheBrianAndrus" target="_blank">YouTube</a>
+      <a href="https://www.linkedin.com/in/thebrianandrus/" target="_blank">LinkedIn</a>
+    </div>
+
+    <!-- Portfolio of portfolios -->
+    <div class="circle-section">
+      <div class="circle">
+        <a href="https://www.thebrianandrus.com" target="_blank" class="circle-link acting">
+          Acting
+        </a>
+
+        <a href="https://www.linkedin.com/in/thebrianandrus" target="_blank" class="circle-link marketing">
+          Marketing
+        </a>
+
+        <a href="https://www.inebriantstudios.com" target="_blank" class="circle-link studios">
+          Inebriant Studios
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div>Contact</div>
+    <div class="contact">
+      <span>248.977.7424</span> &nbsp;·&nbsp;
+      <a href="mailto:thebrianandrus@gmail.com">thebrianandrus@gmail.com</a>
+    </div>
+  </footer>
+</body>
+</html>
+
+
+
+
